@@ -1,0 +1,51 @@
+extends ../layout
+
+block content
+    h1.
+        Employee Information
+    table(width="450px")
+        tr
+        td Employee Name:
+        td
+            h4.
+                #{blob.empName}
+        tr
+        td Employee Number:
+        td
+            h4.
+                #{blob.empNo}
+        tr
+        td Infosys Email ID:
+        td
+            h4.
+                #{blob.infoEmail}
+        tr
+        td DBS Email ID:
+        td
+            h4.
+                #{blob.dbsEmail}
+        tr
+        td BG Check Cleared:
+        td
+            h4.
+                #{blob.isBgChecked}
+        tr
+        td DBS Asset ID:
+        td
+            h4.
+                #{blob.dbsAssetID}
+        tr
+        td Mobile Number:
+        td
+            h4.
+                #{blob.mobile}
+        tr
+        td Name of Project:
+        td
+            h4.
+                #{blob.project}
+        tr
+        td Location:
+        td
+            h4.
+                #{blob.location}

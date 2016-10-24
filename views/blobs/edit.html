@@ -1,0 +1,118 @@
+<!doctype html>
+<html> 
+<header> 
+ <meta charset="utf-8">
+ <title><%=title%></title>
+ <style>
+ .container {
+      background: #eee; 
+    }
+ .container input {
+        
+    }
+</style>
+</header> 
+<body>
+<div class="container">
+  <form name="editblob" method="post" action="/blobs/<%=blob._id%>/edit">
+    <table>
+      <tr>
+       <td>
+        <label for="empName">Employee Name</label>
+      </td>
+      <td valign="top">
+        <input  type="text" name="empName" maxlength="50" size="30" value="<%=blob.empName%>">
+      </td>
+    </tr>
+
+    <tr>
+     <td valign="top"">
+      <label for="empNo">Employee Number</label>
+    </td>
+    <td valign="top">
+      <input  type="text" name="empNo" maxlength="50" size="30" value="<%=blob.empNo%>">
+    </td>
+  </tr>
+  <tr>
+   <td valign="top">
+    <label for="infoEmail">Infosys Email ID</label>
+  </td>
+  <td valign="top">
+    <input  type="text" name="infoEmail" maxlength="80" size="30" value="<%=blob.infoEmail%>">
+  </td>
+
+</tr>
+<tr>
+ <td valign="top">
+  <label for="dbsEmail">DBS Email ID</label>
+</td>
+<td valign="top">
+  <input  type="text" name="dbsEmail" maxlength="30" size="30" value="<%=blob.dbsEmail%>"/>
+</td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="isBgChecked">BG Check Cleared</label>
+</td>
+<td valign="top">
+  
+  <input type="radio" name="isBgChecked" value="<%=blob.isBgChecked%>">Yes</input>
+  <input type="radio" name="isBgChecked" value="<%=blob.isBgChecked%>">No</input>
+  
+</td>
+
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="dbsAssetID">DBS Assest ID</label>
+</td>
+<td valign="top">
+  <input  type="text" name="dbsAssetID" size="30" value="<%=blob.dbsAssetID%>"/>
+</td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="mobile">Mobile Number</label>
+</td>
+<td valign="top">
+  <input  type="number" name="mobile" maxlength="30" size="30" value="<%=blob.mobile%>">
+</td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="project">Name of Project</label>
+</td>
+<td valign="top">
+  <input  type="text" name="project" size="30" value="<%=blob.project%>">
+</td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="location">Location</label>
+</td>
+<td valign="top">
+<!--HTML 5 features-->
+   <input type="text" name="location" list="locations" value="<%=blob.location%>">
+   <datalist id="locations">
+     <option value="DAH">DAH</option>
+     <option value="Signature">Signature</option>
+     <option value="Attrium">Attrium</option>
+     <option value="Plaza8">Plaza8</option>
+   </datalist>
+</td>
+</tr>
+
+<tr>
+ <td colspan="2">
+  <input type="submit" value="Update">   
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body> 
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html> 
+<header>
+   <meta charset="utf-8">
+   <title>New Employee Added</title>
+</header> 
+<body> 
+    <br>
+    <h1>You have added an employee information successfully</h1>
+
+    <ul>
+       <% blobs.forEach(function(blob){ %>
+       <a href="/blobs/<%=blob._id%>">Show <%=blob.empNo%> <%=blob.empName%></a><br>
+       <% }); %>
+   </ul>
+</body> 
+</html>

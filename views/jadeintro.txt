@@ -1,0 +1,3 @@
+Jade
+
+Jade is a templating engine. It is a language that compiles to HTML. It's a really great way of separating your logic from your markup. If you've dabbled in PHP, you'll know the problem I'm talking about. Jade is awesome. Some people are put off its whitespace-significant syntax, but I recommend giving it a go. It's very clean, and you'll never write a malformed HTML document again! (You'll never have to type angle brackets ever again).

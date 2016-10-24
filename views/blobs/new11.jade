@@ -1,0 +1,52 @@
+extends ../layout
+
+block content
+	h1.
+		#{title}
+	form#formAddBlob(name="addblob",method="post",action="/blobs")
+		table(width='450px')
+			tr
+				td Employee Name:
+				td 
+					input#inputEmpName(type="text", placeholder="ex. Conan Hung", name="empName")
+			tr
+				td Employee Number:
+				td 
+					input#inputEmpNo(type="text", name="empNo")
+			tr
+				td Infosys Email ID:
+				td 
+					input#inputInfoEmail(type="text", name="infoEmail")
+			tr
+				td DBS Email ID:
+				td 
+					input#inputDbsEmail(type="text", name="dbsEmail")
+			tr
+				td BG Check Cleared:
+				td 
+					input#inputIsBgChecked(type="radio", name="isBgChecked" value="Yes")
+					| Yes
+					input#inputIsBgChecked(type="radio", name="isBgChecked" value="No")
+					| No
+			tr
+				td DBS Assest ID:
+				td 
+					input#inputInfoDbsAssestID(type="text", name="dbsAssetID")
+			tr
+				td Mobile Number:
+				td 
+					input#inputMobile(type="number", placeholder="ex. 99998888", name="mobile")
+			tr
+				td Name of Project:
+				td 
+					input#inputProject(type="text" name="project")
+			tr
+				td Location:
+				td 
+					select(name="location")
+						option(value="DAH") DAH
+						option(value="Signature") Signature
+						option(value="Attrium") Attrium
+						option(value="Plaza8") Plaza8
+		p
+			button#btnSubmit(type="submit") submit

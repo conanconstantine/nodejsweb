@@ -1,0 +1,105 @@
+<!doctype html>
+<html> 
+<header> 
+ <meta charset="utf-8">
+ <title></title>
+ <link rel="stylesheet" href="css/styles.css?v=1.0">
+ <style>
+  .user-form { padding:20px; }
+
+  .user-form .field { padding: 4px; margin:1px; background: #eee; }
+
+  .user-form .field label { display:inline-block; width:120px; margin-left:5px; }
+
+  .user-form .field input { display:inline-block; }
+</style>
+</header> 
+<body align="center">
+
+  <form name="addblob" method="post" action="/blobs" class="user-form">
+    <table width="450px">
+
+      <tr class="field">
+       <td>
+        Employee Name
+      </td>
+      <td valign="top">
+        <%=blob.empName%>
+      </td>
+    </tr>
+
+    <tr class="field">
+     <td valign="top">
+      Employee Number
+    </td>
+    <td valign="top">
+      <%=blob.empNo%>
+    </td>
+  </tr>
+  <tr class="field">
+   <td valign="top">
+    Infosys Email ID
+  </td>
+  <td valign="top">
+    <%=blob.infoEmail%>
+  </td>
+
+</tr>
+<tr class="field">
+ <td valign="top">
+  DBS Email ID
+</td>
+<td valign="top">
+  <%=blob.dbsEmail%>
+</td>
+</tr>
+<tr class="field">
+ <td valign="top">
+  BG Check Cleared
+</td>
+<td valign="top">
+  <%=blob.isBgChecked%>
+</td>
+
+</tr>
+
+<tr class="field">
+ <td valign="top">
+  DBS Assest ID
+</td>
+<td valign="top">
+  <%=blob.dbsAssetID%>
+</td>
+</tr>
+
+<tr class="field">
+ <td valign="top">
+  Mobile Number
+</td>
+<td valign="top">
+  <%=blob.mobile%>
+</td>
+</tr>
+
+<tr class="field">
+ <td valign="top">
+  Name of Project
+</td>
+<td valign="top">
+  <%=blob.project%>
+</td>
+</tr>
+
+<tr class="field">
+ <td valign="top">
+  Location
+</td>
+<td valign="top">
+  <%=blob.location%>
+</td>
+</tr>
+</table>
+</form>
+
+</body> 
+</html>

@@ -1,0 +1,14 @@
+To make the render engine accept html instead of jade you can follow the following steps;
+
+Install consolidate and swig to your directory.
+ npm install consolidate
+ npm install swig
+add following lines to your app.js file
+var cons = require('consolidate');
+
+// view engine setup
+app.engine('html', cons.swig)
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
+add your view templates as .html inside “views” folder. Restart you node server and start the app in the browser.
+Though this will render html without any issue, I would recommend you to use JADE by learning it. Jade is an amazing template engine and learning this will help you achieve better design & scalability.
