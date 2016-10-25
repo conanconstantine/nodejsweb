@@ -1,2 +1,2 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/nodewebappdb');
+mongoose.connect(process.env.MONGOLAB_JADE_URI || 'mongodb://localhost/nodewebappdb');
