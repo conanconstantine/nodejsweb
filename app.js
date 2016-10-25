@@ -17,8 +17,10 @@ var routes = require('./routes/index'),
 //var users = require('./routes/users');
 
 var app = express();
-
-app.listen(8099);
+var port = process.env.PORT || 8099;
+app.listen(port, function(){
+    console.log("listening on: "+port);
+});
 
 // view engine setup
 // jade is a html-like with different syntax - could be changed
